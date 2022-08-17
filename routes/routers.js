@@ -56,10 +56,10 @@ router.post("/update",(req,res)=>{
    })
 })
 
-router.post("/delete/:id",(req,res)=>{
-    const {id, nombre,precio} = req.body
+router.get("/delete/:id",(req,res)=>{
+    const id = req.params.id
     console.log(req.body)
-   conection.query("DELETE users SET ? WHERE id=?",[id],(error,results)=>{
+   conection.query("DELETE FROM users WHERE id=?",[id],(error,results)=>{
     if (error) {
         console.log(error)
     } else {

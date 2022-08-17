@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+   * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+.container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .divs {
+      text-overflow: "";
+      padding: 1em;
+      margin: auto;
+      justify-content: center;
+
+      margin-bottom: 3em;
+      width: 400px;
+      height: 200px;
+      padding: 0;
+      /* border: 1px solid red; */
+      box-sizing: border-box;
+
+
+    }
+
+    .resultados {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      text-align: center;
+      align-content: center;
+      vertical-align: auto;
+      align-items: center;
+      padding: 3em;
+
+    }
+
+</style>
+<body>
+  
+<div class="resultados divs">
+
+  <img src="/src/LOGOHUESO.png" width="75px"> <br>
+  <div>
+  
+  </div>
+  <h2>
+     <%= user.nombre.toUpperCase() %>
+  </h2>
+  <h2>
+     <%= user.precio %>
+  </h2>
+
+
+
+</div>
+
+
+  
+</body>
+</html>
